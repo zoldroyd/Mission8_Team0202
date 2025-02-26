@@ -19,10 +19,14 @@ public class TaskContext :DbContext
         );
         
         modelBuilder.Entity<Task>().HasData(
-            new Task { TaskId = 1, TaskName = "Clean my room", DueDate = "May 1, 2021",  CategoryId = 1, Quadrant = 4, Completed = "false" },
-            new Task { TaskId = 2, TaskName = "Take 414 midterm", DueDate = "April 1, 2021",  CategoryId = 2, Quadrant = 1, Completed = "false" },
-            new Task { TaskId = 3, TaskName = "Go for a run", DueDate = "March 1, 2021",  CategoryId = 1, Quadrant = 2, Completed = "false" },
-            new Task { TaskId = 4, TaskName = "Go to the grocery story", DueDate = "Feb 1, 2021",  CategoryId = 2, Quadrant = 1, Completed = "false" }
+            new Task { TaskId = 1, TaskName = "Clean my room", DueDate = new DateTime(2025,5,10),  CategoryId = 1, Quadrant = 4, Completed = false },
+            new Task { TaskId = 2, TaskName = "Take 414 midterm", DueDate = new DateTime(2025,3,10),  CategoryId = 2, Quadrant = 1, Completed = false },
+            new Task { TaskId = 3, TaskName = "Go for a run", DueDate = new DateTime(2025,4,10),  CategoryId = 1, Quadrant = 2, Completed = false },
+            new Task { TaskId = 4, TaskName = "Go to the grocery story", DueDate = new DateTime(2025,2,10),  CategoryId = 2, Quadrant = 1, Completed = false },
+            new Task { TaskId = 5, TaskName = "Fill up water", DueDate = new DateTime(2025,2,10),  CategoryId = 1, Quadrant = 1, Completed = true},
+            new Task { TaskId = 6, TaskName = "Read a book", DueDate = new DateTime(2025,2,10),  CategoryId = 1, Quadrant = 3, Completed = false },
+            new Task { TaskId = 7, TaskName = "Get a haircut", DueDate = new DateTime(2025,2,10),  CategoryId = 1, Quadrant = 3, Completed = false },
+            new Task { TaskId = 8, TaskName = "Do homework", DueDate = new DateTime(2025,2,10),  CategoryId = 3, Quadrant = 2, Completed = false }
 
         );
     }
