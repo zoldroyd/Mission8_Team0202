@@ -5,7 +5,9 @@
     <projectFile profileName="https">Mission8_Team0202/Mission8_Team0202.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="" />
+    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,21 +16,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zoldroyd"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zoldroyd&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zoldroyd/Mission8_Team0202.git",
-    "accountId": "6f52458e-8e4d-414f-af39-0c06cba5089f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zoldroyd/Mission8_Team0202.git&quot;,
+    &quot;accountId&quot;: &quot;6f52458e-8e4d-414f-af39-0c06cba5089f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2taLLQdEU4ml60aDn8VFfkGhuU9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "views-Christian",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -84,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740585182233</updated>
       <workItem from="1740585183663" duration="7000" />
+      <workItem from="1740585242134" duration="4000" />
     </task>
     <servers />
   </component>
