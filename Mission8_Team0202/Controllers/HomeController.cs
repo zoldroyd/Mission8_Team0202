@@ -16,11 +16,11 @@ public class HomeController : Controller
     
     public IActionResult Index()
     {
-        var movies = _context.Tasks
+        var taskToDo = _context.Tasks
             .Include(x => x.Category) // join the category names
             .ToList();
         
-        return View();
+        return View(taskToDo);
     }
     
     [HttpGet]
@@ -30,11 +30,11 @@ public class HomeController : Controller
             .OrderBy(c => c.CategoryName)
             .ToList();
         
-        return View("CreateTask", new Mission8_Team0202.Models.Task());
+        return View("CreateTask", new TaskToDo());
     }
     
     [HttpPost]
-    public IActionResult CreateTask(CreateTask response)
+    public IActionResult CreateTask(TaskToDo response)
     {
         if (ModelState.IsValid)
         {
@@ -70,7 +70,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Edit(CreateTask updatedInfo)
+    public IActionResult Edit(TaskToDo updatedInfo)
     {
         if (ModelState.IsValid)
         {
@@ -85,7 +85,7 @@ public class HomeController : Controller
             .OrderBy(c => c.CategoryName)
             .ToList();
     
-        return View("Index", updatedInfo);
+        return View("CreateTask", updatedInfo);
     }
 
 
@@ -100,13 +100,11 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Delete(CreateTask form)
+    public IActionResult Delete(TaskToDo form)
     {
         _context.Tasks.Remove(form);
         _context.SaveChanges();
         
         return RedirectToAction("Index");
     }
-}
-    
 }

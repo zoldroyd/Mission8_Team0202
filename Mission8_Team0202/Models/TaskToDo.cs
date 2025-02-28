@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission8_Team0202.Models;
 
-public class Task
+public class TaskToDo
 {
     [Key]
     public int TaskId { get; set; }
