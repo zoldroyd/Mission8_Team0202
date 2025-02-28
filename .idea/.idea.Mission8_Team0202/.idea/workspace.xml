@@ -8,10 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Views/Home/CreateTask.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Views/Home/CreateTask.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +38,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/Zac/Documents/GitHub/Mission8_Team0202/Mission8_Team0202/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Zac/Documents/GitHub/Mission8_Team0202/Mission8_Team0202/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Zac/Documents/GitHub/Mission8_Team0202/Mission8_Team0202/Views/Home/CreateTask.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../IS 413/Mission8_Team0202/Mission8_Team0202/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -117,7 +113,7 @@
       <workItem from="1740767857904" duration="398000" />
       <workItem from="1740771510547" duration="257000" />
       <workItem from="1740771806431" duration="1795000" />
-      <workItem from="1740773619347" duration="801000" />
+      <workItem from="1740773619347" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="new stuff">
       <option name="closed" value="true" />
@@ -143,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740771699659</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ff">
+      <option name="closed" value="true" />
+      <created>1740774574372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740774574372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +160,7 @@
     <MESSAGE value="new stuff" />
     <MESSAGE value="ob" />
     <MESSAGE value="wet" />
-    <option name="LAST_COMMIT_MESSAGE" value="wet" />
+    <MESSAGE value="ff" />
+    <option name="LAST_COMMIT_MESSAGE" value="ff" />
   </component>
 </project>
