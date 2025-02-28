@@ -1,8 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
-@Model
+@model TaskToDo
 
 <h2>Current tasks</h2>
 
@@ -11,9 +11,9 @@
 
 		<div class="col-2"></div>
 
-		<div class="col-5"><h5>Urgent</h5></div>
+		<div class="col-5"><h4>Urgent</h4></div>
 
-		<div class="col-5"><h5>Not Urgent</h5></div>
+		<div class="col-5"><h4>Not Urgent</h4></div>
 
 	</div>
 
@@ -22,25 +22,73 @@
 	<div class="row border-bottom">
 
 		<div class="col-2 ">
-			<h5>Important</h5>
+			<h4>Important</h4>
 			<br />
-			<h5>Not Important</h5>
+			<h4>Not Important</h4>
 		</div>
 
 		<div class="col-5">
-			<p>Quadrant 2</p>
+			<h6>Quadrant 1</h6>>
+			<ul>
+				@foreach (var t in Model)
+				{
+					@if (t.Quadrant == 1)
+					{
+						<li>@t.TaskName
+						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
+							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						</li>
+					}
+				}
+			</ul>
 			<br />
-			<p>Quadrant 4</p>
+			<h6>Quadrant 3</h6>
+			<ul>
+				@foreach (var t in Model)
+				{
+					@if (t.Quadrant == 3)
+					{
+						<li>@t.TaskName
+						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
+							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						</li>
+					}
+				}
+			</ul>
 		</div>
 
 		<div class="col-5">
-			<p>Quadrant 1</p>
+			<h6>Quadrant 2</h6>
+			<ul>
+				@foreach (var t in Model)
+				{
+					@if (t.Quadrant == 2)
+					{
+						<li>
+							@t.TaskName
+							<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
+							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						</li>
+					}
+				}
+			</ul>
 			<br />
-			<p>Quadrant 3</p>
+			<h6>Quadrant 4</h6>
+			<ul>
+				@foreach (var t in Model)
+				{
+					@if (t.Quadrant == 4)
+					{
+						<li>
+							@t.TaskName
+							<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
+							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						</li>
+					}
+				}
+			</ul>
 		</div>
-
 
 	</div>
-
 
 </div>
