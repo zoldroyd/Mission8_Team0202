@@ -34,9 +34,10 @@
 				{
 					@if (t.Quadrant == 1)
 					{
-						<li>@t.TaskName
-						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
-							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						<li>
+							@t.TaskName
+							<a asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</a>
+							<a asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</a>
 						</li>
 					}
 				}
@@ -52,8 +53,8 @@
 					{
 						<li>
 							@t.TaskName
-							<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
-							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+							<a asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</a>
+							<a asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</a>
 						</li>
 					}
 				}
@@ -73,9 +74,10 @@
 				{
 					@if (t.Quadrant == 3)
 					{
-						<li>@t.TaskName
-						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
-							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						<li>
+							@t.TaskName
+							<a asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</a>
+							<a asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</a>
 						</li>
 					}
 				}
@@ -102,8 +104,8 @@
 					{
 						<li>
 							@t.TaskName
-							<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
-							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+							<a asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</a>
+							<a asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</a>
 						</li>
 					}
 				}
