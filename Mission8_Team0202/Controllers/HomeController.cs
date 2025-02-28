@@ -18,6 +18,7 @@ public class HomeController : Controller
     {
         var taskToDo = _context.Tasks
             .Include(x => x.Category) // join the category names
+            .Where(x => x.Completed == false)
             .ToList();
         
         return View(taskToDo);
@@ -88,23 +89,18 @@ public class HomeController : Controller
         return View("CreateTask", updatedInfo);
     }
 
-
-    [HttpGet]
-    public IActionResult Delete(int id)
-    {
-        // get specific record by id
+    [HttpPost] 
+    public IActionResult Delete(int id) 
+    { 
         var recordToDelete = _context.Tasks
-            .Single(x => x.TaskId == id);
+            .SingleOrDefault(x => x.TaskId == id);
         
-        return View(recordToDelete);
-    }
-
-    [HttpPost]
-    public IActionResult Delete(TaskToDo form)
-    {
-        _context.Tasks.Remove(form);
-        _context.SaveChanges();
+        if (recordToDelete != null) 
+        { 
+            _context.Tasks.Remove(recordToDelete);
+            _context.SaveChanges();
+        } 
         
-        return RedirectToAction("Index");
+        return RedirectToAction("Index"); // Redirects to the main list view
     }
 }
