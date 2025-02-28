@@ -1,13 +1,112 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Mission8_Team0202.Models;
 
 namespace Mission8_Team0202.Controllers;
 
 public class HomeController : Controller
 {
+    private TaskContext _context;
+
+    public HomeController(TaskContext context) // constructor
+    {
+        _context = context;
+    }
+    
     public IActionResult Index()
     {
+        var movies = _context.Tasks
+            .Include(x => x.Category) // join the category names
+            .ToList();
+        
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult CreateTask()
+    {
+        ViewBag.Categories = _context.Categories
+            .OrderBy(c => c.CategoryName)
+            .ToList();
+        
+        return View("CreateTask", new Mission8_Team0202.Models.Task());
+    }
+    
+    [HttpPost]
+    public IActionResult CreateTask(CreateTask response)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Tasks.Add(response); // add response to database
+            _context.SaveChanges(); // save the changes
+
+            return RedirectToAction("Index"); // reload page so form is empty
+        }
+        else
+        {
+            // add view bag so its loads the data
+            ViewBag.Categories = _context.Categories
+                .OrderBy(c => c.CategoryName)
+                .ToList();
+            
+            return View(response);
+        }
+    }
+    
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        // get specific record by id
+        var recordToEdit = _context.Tasks
+            .Single(x => x.TaskId == id);
+        
+        // viewbag to load data
+        ViewBag.Categories = _context.Categories
+            .OrderBy(c => c.CategoryName)
+            .ToList();
+        
+        return View("CreateTask", recordToEdit);
+    }
+
+    [HttpPost]
+    public IActionResult Edit(CreateTask updatedInfo)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Update(updatedInfo);  // Update the movie record
+            _context.SaveChanges();  // Save changes to the database
+        
+            return RedirectToAction("Index");  // Redirect to movie list page
+        }
+
+        // If model state is invalid, reload the categories and return the form
+        ViewBag.Categories = _context.Categories
+            .OrderBy(c => c.CategoryName)
+            .ToList();
+    
+        return View("Index", updatedInfo);
+    }
+
+
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        // get specific record by id
+        var recordToDelete = _context.Tasks
+            .Single(x => x.TaskId == id);
+        
+        return View(recordToDelete);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(CreateTask form)
+    {
+        _context.Tasks.Remove(form);
+        _context.SaveChanges();
+        
+        return RedirectToAction("Index");
+    }
+}
+    
 }
