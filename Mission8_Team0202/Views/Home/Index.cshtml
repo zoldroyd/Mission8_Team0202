@@ -2,7 +2,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@Model
+
+<h2>Current tasks</h2>
+
+<div class="container">
+	<div class="row border-bottom">
+
+		<div class="col-2"></div>
+
+		<div class="col-5"><h5>Urgent</h5></div>
+
+		<div class="col-5"><h5>Not Urgent</h5></div>
+
+	</div>
+
+	<br />
+
+	<div class="row border-bottom">
+
+		<div class="col-2 ">
+			<h5>Important</h5>
+			<br />
+			<h5>Not Important</h5>
+		</div>
+
+		<div class="col-5">
+			<p>Quadrant 2</p>
+			<br />
+			<p>Quadrant 4</p>
+		</div>
+
+		<div class="col-5">
+			<p>Quadrant 1</p>
+			<br />
+			<p>Quadrant 3</p>
+		</div>
+
+
+	</div>
+
+
 </div>
