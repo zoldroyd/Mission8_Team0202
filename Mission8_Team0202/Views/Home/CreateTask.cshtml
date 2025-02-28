@@ -28,6 +28,9 @@
     <input asp-for="Quadrant" min="1" max="4" required/>
     <br/>
 
+    <!-- [Required]
+    [Range(1, 4, ErrorMessage = "Quadrant must be between 1 and 4.")] -->
+
     <!-- Category field (optional) -->
     <label asp-for="CategoryId">Category: </label>
     <select asp-for="CategoryId">
