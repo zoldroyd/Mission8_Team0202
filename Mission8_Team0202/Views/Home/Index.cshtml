@@ -6,6 +6,8 @@
 
 <h2>Current tasks</h2>
 
+<br /><br />
+
 <div class="container">
 	<div class="row border-bottom">
 
@@ -23,8 +25,6 @@
 
 		<div class="col-2 ">
 			<h4>Important</h4>
-			<br />
-			<h4>Not Important</h4>
 		</div>
 
 		<div class="col-5">
@@ -33,20 +33,6 @@
 				@foreach (var t in Model)
 				{
 					@if (t.Quadrant == 1)
-					{
-						<li>@t.TaskName
-						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
-							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
-						</li>
-					}
-				}
-			</ul>
-			<br />
-			<h6>Quadrant 3</h6>
-			<ul>
-				@foreach (var t in Model)
-				{
-					@if (t.Quadrant == 3)
 					{
 						<li>@t.TaskName
 						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
@@ -72,7 +58,42 @@
 					}
 				}
 			</ul>
-			<br />
+		</div>
+
+	</div>
+
+
+	<div class="row border-bottom">
+
+
+		<div class="col-5">
+			<h6>Quadrant 3</h6>
+			<ul>
+				@foreach (var t in Model)
+				{
+					@if (t.Quadrant == 3)
+					{
+						<li>@t.TaskName
+						<button asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId" class="btn btn-info">Edit</button>
+							<button asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId" class="btn btn-danger">Delete</button>
+						</li>
+					}
+				}
+			</ul>
+		</div>
+
+
+	</div>
+
+	<div class="row border-bottom">
+
+		<div class="col-2 ">
+			<h4>Not Important</h4>
+		</div>
+
+
+
+		<div>
 			<h6>Quadrant 4</h6>
 			<ul>
 				@foreach (var t in Model)
@@ -88,7 +109,5 @@
 				}
 			</ul>
 		</div>
-
 	</div>
-
 </div>
