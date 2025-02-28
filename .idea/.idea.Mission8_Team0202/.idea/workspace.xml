@@ -8,7 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="" />
+    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Models/EFTaskRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Models/EFTaskRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Models/ITaskRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Models/ITaskRepository.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,6 +119,7 @@
       <workItem from="1740771806431" duration="1795000" />
       <workItem from="1740773619347" duration="959000" />
       <workItem from="1740784860472" duration="214000" />
+      <workItem from="1740785099173" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="new stuff">
       <option name="closed" value="true" />

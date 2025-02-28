@@ -22,7 +22,7 @@ public class HomeController : Controller
             .Where(x => x.Completed == false)
             .ToList();
         
-        return View(taskToDo);
+        return View(TaskToDo);
     }
     
     [HttpGet]
