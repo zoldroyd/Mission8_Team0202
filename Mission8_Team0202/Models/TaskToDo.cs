@@ -9,6 +9,7 @@ public class TaskToDo
     public int TaskId { get; set; }
     [Required]
     public string TaskName { get; set; }
+    [Required]
     public DateTime DueDate { get; set; }
     [Required]
     public int Quadrant { get; set; }
