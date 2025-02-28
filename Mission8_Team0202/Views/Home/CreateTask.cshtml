@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Create Task";
+}
+
+@model Task
+
+<!-- Display the page title stored in ViewData -->
+<h1>@ViewData["Title"]</h1>
+
+<!-- Form for submitting a new movie record -->
+<form method="post">
+    
+    <!-- Hidden MovieID -->
+    <input type="hidden" asp-for="TaskId" />
+
+    <!-- Task (required) -->
+    <label asp-for="TaskName">Task Name: </label>
+    <input asp-for="TaskName" required/>
+    <br/>
+
+    <!-- Due Date (Date Picker) -->
+    <label asp-for="DueDate">Due Date: </label>
+    <input asp-for="DueDate" type="date"/>
+    <br/>
+
+    <!-- Quadrant (required) -->
+    <label asp-for="Quadrant">Quadrant: </label>
+    <input asp-for="Quadrant" min="1" max="4" required/>
+    <br/>
+
+    <!-- [Required]
+    [Range(1, 4, ErrorMessage = "Quadrant must be between 1 and 4.")] -->
+
+    <!-- Category field (optional) -->
+    <label asp-for="CategoryId">Category: </label>
+    <select asp-for="CategoryId">
+        <option value="">Select a Category</option> <!-- null -->
+        @foreach (Category m in ViewBag.Categories)
+        {
+            <!-- Populate the dropdown with category options from ViewBag -->
+            <option value="@m.CategoryId">@m.CategoryName</option>
+        }
+    </select>
+    <br/>
+
+    <!-- Dropdown menu for Completed field -->
+    <label asp-for="Completed">Completed: </label>
+    <select asp-for="Completed">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    <br/>
+
+    <!-- Submit button -->
+    <button type="submit">Save the Task</button>
+    
+    <div asp-validation-summary="All"></div>
+</form>
