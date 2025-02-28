@@ -34,14 +34,14 @@
     <!-- Category field (optional) -->
     <label asp-for="CategoryId">Category: </label>
     <select asp-for="CategoryId">
-        <option value="">Select a Category</option> <!-- null -->
+        <option value="">Select a Category</option>
         @foreach (Category m in ViewBag.Categories)
         {
-            <!-- Populate the dropdown with category options from ViewBag -->
-            <option value="@m.CategoryId">@m.CategoryName</option>
+            <option value="@m.CategoryId" >@m.CategoryName</option>
         }
     </select>
     <br/>
+
 
     <!-- Dropdown menu for Completed field -->
     <label asp-for="Completed">Completed: </label>
