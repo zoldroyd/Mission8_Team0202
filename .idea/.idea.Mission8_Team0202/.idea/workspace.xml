@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="" />
+    <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Views/Home/CreateTask.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Views/Home/CreateTask.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +120,7 @@
       <workItem from="1740785099173" duration="603000" />
       <workItem from="1740785851835" duration="1422000" />
       <workItem from="1740788008600" duration="1912000" />
+      <workItem from="1740789938720" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="new stuff">
       <option name="closed" value="true" />
