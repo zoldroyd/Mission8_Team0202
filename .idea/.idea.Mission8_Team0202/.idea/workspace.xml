@@ -9,9 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b83f697-2d60-432c-a641-9f5851a4ae4b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Models/EFTaskRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Models/EFTaskRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission8_Team0202/Models/ITaskRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission8_Team0202/Models/ITaskRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission8_Team0202/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +118,7 @@
       <workItem from="1740773619347" duration="959000" />
       <workItem from="1740784860472" duration="214000" />
       <workItem from="1740785099173" duration="603000" />
+      <workItem from="1740785851835" duration="1422000" />
     </task>
     <task id="LOCAL-00001" summary="new stuff">
       <option name="closed" value="true" />
@@ -161,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740784992417</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="big changes">
+      <option name="closed" value="true" />
+      <created>1740787260696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740787260696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +183,7 @@
     <MESSAGE value="wet" />
     <MESSAGE value="ff" />
     <MESSAGE value="ss" />
-    <option name="LAST_COMMIT_MESSAGE" value="ss" />
+    <MESSAGE value="big changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="big changes" />
   </component>
 </project>
