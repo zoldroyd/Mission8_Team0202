@@ -127,9 +127,11 @@ namespace Mission8_Team0202.Controllers
 
         public IActionResult Index()
         {
-            var taskToDo = _repo.TasksTodo
+            var taskToDo = _repo.TasksToDo
+                .AsQueryable()
+                .Include(x => x.Category)
                 .Where(x => !x.Completed) // Fix: Use _repo.TasksTodo
-                .ToList();
+                .ToList();  // Use ToList() here to execute the query
 
             return View(taskToDo);
         }
@@ -159,7 +161,7 @@ namespace Mission8_Team0202.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var recordToEdit = _repo.TasksTodo
+            var recordToEdit = _repo.TasksToDo
                 .Single(x => x.TaskId == id);
 
             ViewBag.Categories = _repo.GetCategories(); // Fix: Use repository method
@@ -184,7 +186,7 @@ namespace Mission8_Team0202.Controllers
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            var recordToDelete = _repo.TasksTodo
+            var recordToDelete = _repo.TasksToDo
                 .SingleOrDefault(x => x.TaskId == id);
 
             if (recordToDelete != null)

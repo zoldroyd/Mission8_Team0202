@@ -14,7 +14,7 @@ public class TaskToDo
     [Required]
     public int Quadrant { get; set; }
     [ForeignKey("CategoryId")]
-    public int CategoryId { get; set; }
-    public Category Category { get; set; }
+    public int? CategoryId { get; set; }
+    public Category? Category { get; set; }
     public bool Completed { get; set; }
 }

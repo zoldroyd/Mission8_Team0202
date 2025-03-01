@@ -49,7 +49,7 @@ namespace Mission8_Team0202.Models
             _context = temp;
         }
 
-        public List<TaskToDo> TasksTodo => _context.Tasks.Include(t => t.Category).ToList();
+        public List<TaskToDo> TasksToDo => _context.Tasks.Include(t => t.Category).ToList();
 
         public void AddTask(TaskToDo task)
         {

@@ -2,7 +2,7 @@ namespace Mission8_Team0202.Models
 {
     public interface ITaskRepository
     {
-        List<TaskToDo> TasksTodo { get; } // Fix: Use TaskToDo instead of Task
+       List<TaskToDo> TasksToDo{ get; } // Fix: Use TaskToDo instead of Task
 
         // Method signatures
         void AddTask(TaskToDo task);
