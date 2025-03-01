@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96569CCA-2829-4CFD-AC4E-DEEF6841F22A}|Mission8_Team0202\\Mission8_Team0202.csproj|c:\\users\\chris\\source\\repos\\mission8_team0202\\mission8_team0202\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96569CCA-2829-4CFD-AC4E-DEEF6841F22A}|Mission8_Team0202\\Mission8_Team0202.csproj|solutionrelative:mission8_team0202\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96569CCA-2829-4CFD-AC4E-DEEF6841F22A}|Mission8_Team0202\\Mission8_Team0202.csproj|c:\\users\\chris\\source\\repos\\mission8_team0202\\mission8_team0202\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{96569CCA-2829-4CFD-AC4E-DEEF6841F22A}|Mission8_Team0202\\Mission8_Team0202.csproj|solutionrelative:mission8_team0202\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,25 +30,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Mission8_Team0202\\Mission8_Team0202\\.gitignore",
-              "RelativeDocumentMoniker": "Mission8_Team0202\\.gitignore",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Mission8_Team0202\\Mission8_Team0202\\.gitignore",
-              "RelativeToolTip": "Mission8_Team0202\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-28T19:21:25.383Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Mission8_Team0202\\Mission8_Team0202\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Mission8_Team0202\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Mission8_Team0202\\Mission8_Team0202\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Mission8_Team0202\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T15:42:23.322Z",
               "EditorCaption": ""
@@ -65,7 +49,7 @@
               "RelativeDocumentMoniker": "Mission8_Team0202\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Mission8_Team0202\\Mission8_Team0202\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Mission8_Team0202\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T15:56:24.918Z"
             }
