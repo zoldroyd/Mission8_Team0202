@@ -2,10 +2,14 @@ namespace Mission8_Team0202.Models
 {
     public interface ITaskRepository
     {
-        List<Task> TasksTodo { get; }
+        List<TaskToDo> TasksTodo { get; } // Fix: Use TaskToDo instead of Task
+
         // Method signatures
-        void AddTask(Task task);
-        void UpdateTask(Task task);
-        void DeleteTask(Task task); // Corrected method name to Pascal casing
+        void AddTask(TaskToDo task);
+        void UpdateTask(TaskToDo task);
+        void DeleteTask(TaskToDo task);
+        void SaveChanges(); // Ensure SaveChanges exists
+
+        List<Category> GetCategories(); // NEW: Add method to fetch categories
     }
 }
